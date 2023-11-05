@@ -12,28 +12,47 @@ import Register from './assets/Page/Register/Register';
 import Home from './assets/Page/Home/Home';
 import Leyout from './Leyout/Leyout';
 import Rooms from './assets/Page/Rooms/Rooms';
+import MyBooking from './assets/Page/MyBooking/MyBooking';
+import PrivetRoute from './Provider/PrivetRoute';
+import Details from './assets/Page/Details/Details';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Leyout></Leyout>,
-    children:[
+    children: [
       {
-        path:'/',
-        element:<Home></Home>,
+        path: "/",
+        element: <Home></Home>,
       },
       {
-        path:'/login',
-        element:<Login></Login>
+        path: "/login",
+        element: <Login></Login>,
       },
       {
-        path:'/register',
-        element:<Register></Register>
+        path: "/register",
+        element: <Register></Register>,
       },
       {
-        path:'/rooms',
-        element:<Rooms></Rooms>
+        path: "/rooms",
+        element: (
+          <PrivetRoute>
+            <Rooms></Rooms>
+          </PrivetRoute>
+        ),
+      },
+      {
+        path: "/myBooking",
+        element: (
+          <PrivetRoute>
+            <MyBooking></MyBooking>
+          </PrivetRoute>
+        ),
+      },
+      {
+        path:'/details',
+        element:<Details></Details>
       }
-    ]
+    ],
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(

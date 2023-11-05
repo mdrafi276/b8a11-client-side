@@ -1,0 +1,46 @@
+.btn-three {
+    /* background: rgba(255, 255, 255, 0.10); */
+  
+    color: white;
+  
+}
+
+.btn-three:hover {
+    background: linear-gradient(90deg, #08ff08, #50e3fc, #bc13fc, #03a9f4, #0ff0fc);
+    background-size: 500%;
+    z-index: 1;
+    border: none;
+    animation: blink 7s linear infinite;
+
+}
+
+@keyframes blink {
+    from {
+        background-position: 0%;
+
+    }
+
+    to {
+        background-position: 500%;
+
+    }
+
+}
+
+.btn-three::after {
+    content: "";
+    position: absolute;
+    
+   
+    background: inherit;
+    
+    filter: blur(50px);
+    z-index: 0;
+
+}
+
+.btn-three:hover::after {
+    opacity: 1;
+    z-index: 1;
+
+}
