@@ -1,0 +1,56 @@
+[
+    {
+        "_id": "6547a0c2983645b8af819915",
+        "roomId": "1",
+        "imageDescription": "Experience the epitome of luxury and comfort in our Deluxe Suite",
+        "roomSize": "500 sq. ft",
+        "roomImage": "https://i.ibb.co/GFhnC6B/1.jpg",
+        "available": true,
+        "price": 1250
+    },
+    {
+        "_id": "6547a0c2983645b8af819916",
+        "roomId": "2",
+        "imageDescription": "Indulge in pure comfort with our plush pillow-top bed, ensuring a peaceful night's sleep.",
+        "roomSize": "400 sq. ft",
+        "roomImage": "https://i.ibb.co/xCQtzn0/comfortable-pillow-bed.jpg",
+        "available": true,
+        "price": 950
+    },
+    {
+        "_id": "6547a0c2983645b8af819917",
+        "roomId": "3",
+        "imageDescription": "A cozy stay in our Family Suite for your loved ones",
+        "roomSize": "700 sq. ft",
+        "roomImage": "https://i.ibb.co/FzKWbm9/pillow-bed.jpg",
+        "available": true,
+        "price": 1600
+    },
+    {
+        "_id": "6547a0c2983645b8af819918",
+        "roomId": "4",
+        "imageDescription": "Enjoy the penthouse experience in our Executive Suite",
+        "roomSize": "800 sq. ft",
+        "roomImage": "https://i.ibb.co/f8MVsQV/bangkok-thailand-august-12-2016-beautiful-luxury-bedroom-int.jpg",
+        "available": true,
+        "price": 2200
+    },
+    {
+        "_id": "6547a0c2983645b8af819919",
+        "roomId": "5",
+        "imageDescription": "Charming and affordable, our Economy Room is perfect for solo travelers",
+        "roomSize": "300 sq. ft",
+        "roomImage": "https://i.ibb.co/7Cgc7g6/white-pillow.jpg",
+        "available": true,
+        "price": 750
+    },
+    {
+        "_id": "6547a0c2983645b8af819920",
+        "roomId": "6",
+        "imageDescription": "Indulge in a romantic getaway in our Honeymoon Suite",
+        "roomSize": "600 sq. ft",
+        "roomImage": "https://i.ibb.co/MGzHBnr/comfort-pillow-bed-decoration-interior.jpg",
+        "available": true,
+        "price": 1750
+    }
+]

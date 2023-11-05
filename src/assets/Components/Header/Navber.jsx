@@ -165,7 +165,11 @@ const Navber = () => {
                 <div className="navbar-end ">
                   <p className="dark:text-black md:pr-4 pr-1 ">
                     <label className="swap swap-rotate">
-                      <input type="checkbox" onChange={handleTheme} />
+                      <input
+                        type="checkbox"
+                        onChange={handleTheme}
+                        checked={mode === "light" ? false : true}
+                      />
 
                       <svg
                         className="swap-on fill-current  md:w-10 md:h-10"
