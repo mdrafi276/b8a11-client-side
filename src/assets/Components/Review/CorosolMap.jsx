@@ -6,7 +6,7 @@ const CorosolMap = ({ corosul }) => {
       <div className=" body-font text-[#E1AAFF] dark:text-gray-700 mb-2 md:mb-20">
         <div className="container px-5 py-24 mx-auto">
           <div className=" flex flex-col justify-center ">
-            <div className="  any-section w-[800px]  mx-auto lg:mb-0 mb-6 p-4">
+            <div className="  any-section  w-full lg:w-[800px]  mx-auto lg:mb-0 mb-6 p-4">
               <div className="h-full text-center ">
                 <div className="w-[100px] mx-auto">
                   <img
@@ -18,7 +18,7 @@ const CorosolMap = ({ corosul }) => {
 
                 <p className="leading-relaxed ">{feedback}</p>
 
-                <div className="rating mt-5">
+                <div className="rating mt-5 ">
                   <input
                     type="radio"
                     name="rating-2"

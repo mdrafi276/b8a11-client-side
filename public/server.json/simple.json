@@ -4,11 +4,11 @@
         "roomId": "1",
         "imageDescription": "Experience the epitome of luxury and comfort in our Deluxe Suite",
         "roomSize": "500 sq. ft",
-        "roomImage": "https://i.ibb.co/GFhnC6B/1.jpg",
+        "roomImage": "https://i.ibb.co/RpVDPRX/white-bedroom-hotel.jpg",
         "available": true,
         "price": 1250
     },
-    {
+    {                                              
         "_id": "6547a0c2983645b8af819916",
         "roomId": "2",
         "imageDescription": "Indulge in pure comfort with our plush pillow-top bed, ensuring a peaceful night's sleep.",

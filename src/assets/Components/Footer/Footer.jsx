@@ -6,9 +6,9 @@ const Footer = () => {
     return (
       <div>
         <div className=" mt-0 ">
-          <footer className="footer section-footers lg:h-[500px] pl-10 pt-5 md:pt-24   ">
-            <nav>
-              <header className=" text-white hover:text-white footer-title">
+          <footer className="footer  section-footers lg:h-[500px] pl-10 pt-5 md:pt-24   ">
+            <nav className=''>
+              <header className="  text-white hover:text-white footer-title">
                 CONTACT US
               </header>
               <Link to="/" className="link text-gray-400 hover:text-orange-500 cursor-pointer link-hover">
@@ -130,12 +130,12 @@ const Footer = () => {
               </Link>
             </nav>
             <nav>
-              <header className="text-white footer-title">Social</header>
+              <header className="text-white  footer-title">Social</header>
               <div className="grid grid-cols-3 gap-4">
                 <Link className="text-white text-2xl">
                   <FaFacebook></FaFacebook>
                 </Link>
-                <Link className="text-white text-2xl">
+                <Link className="text-white  text-2xl">
                   <FaGithub></FaGithub>
                 </Link>
                 <Link className="text-white text-2xl">

@@ -5,11 +5,12 @@ import { FaGoogle, FaRegEnvelope, FaUnlock } from "react-icons/fa";
 import { AuthContext } from "../../../Provider/AuthProvider";
 import './Login.css'
 import { useContext } from "react";
+import axios from "axios";
 
 const Login = () => {
   const { signIn, googleLogin } = useContext(AuthContext);
   const location = useLocation();
-  console.log("locatin page is comming  ", location);
+  // console.log("locatin page is comming  ", location);
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
@@ -18,6 +19,8 @@ const Login = () => {
     const email = form.email.value;
     const password = form.password.value;
     console.log(email, password);
+
+    
     signIn(email, password)
       .then(() => {
         Swal.fire({
@@ -26,8 +29,22 @@ const Login = () => {
           text: "Login in successfull !",
           footer: '<a href="">Why do I have this issue?</a>',
         });
+
+
         navigate(location?.state ? location.state : "/");
       })
+
+      // .then(result => {
+      //   const loggedInUser = result.user;
+      //   console.log(loggedInUser);
+      //   Swal.fire("Login success........");
+      //   const user = {email};
+      //   axios.post("http://localhost:5000/jwt", user)
+      //   .then(res =>{
+      //     console.log(res.data);
+      //   })
+        
+      // })
       .catch((error) => {
         Swal.fire({
           icon: "error",

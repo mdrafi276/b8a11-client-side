@@ -5,6 +5,7 @@ import { AuthContext } from "../../../Provider/AuthProvider";
 import profile from '../../icon/user.png'
 import './Navber.css'
 import Headroom from "react-headroom";
+import image from '../../../assets/icon/4921994_2556370.jpg'
 const Navber = () => {
 
     const [mode, setMode] = useState("light");
@@ -108,10 +109,10 @@ const Navber = () => {
     );
     return (
       <Headroom>
-        <div className="backdrop-blur sticky dark:text-black  z-20 top-0 ">
+        <div className="backdrop-blur sticky dark:text-red-700 z-20 top-0 ">
           <div
             id="header-nav"
-            className="  text-white dark:bg-white bg-transparent  "
+            className="  text-white  bg-transparent  "
           >
             <div className="  md:-w-full lg:max-w-6xl mx-auto">
               <div className="navbar rounded-lg">
@@ -150,20 +151,20 @@ const Navber = () => {
                     <span>
                       <img
                         className="w-10 rounded-full"
-                        src="https://source.unsplash.com/300x300/?logo"
+                        src={image}
                         alt=""
                       />
                     </span>
-                    <span className="dark:text-black">HotelHub</span>
+                    <span className="dark:text-cyan-500">HotelHub</span>
                   </h1>
                 </div>
                 <div className="navbar-center hidden   lg:flex">
-                  <ul className="menu menu-horizontal dark:text-black px-1">
+                  <ul className="menu menu-horizontal dark:text-cyan-500 px-1">
                     {navLink}
                   </ul>
                 </div>
                 <div className="navbar-end ">
-                  <p className="dark:text-black md:pr-4 pr-1 ">
+                  <p className="dark:text-cyan-500 md:pr-4 pr-1 ">
                     <label className="swap swap-rotate">
                       <input
                         type="checkbox"
@@ -189,7 +190,7 @@ const Navber = () => {
                     </label>
                   </p>
                   {user && (
-                    <p className="md:mr-5 md:block hidden text-[10px] dark:text-black md:text-[12px] lg:text-[15px] font-bold">
+                    <p className="md:mr-5 md:block hidden text-[10px] dark:text-cyan-500 md:text-[12px] lg:text-[15px] font-bold">
                       {user.displayName}
                     </p>
                   )}

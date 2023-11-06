@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 
 const Leyout = () => {
     return (
-      <div className="">
+      <div className="scroll-smooth">
         <Outlet></Outlet>
       </div>
     );

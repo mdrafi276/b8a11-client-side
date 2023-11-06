@@ -1,13 +1,261 @@
 [
-    
-    {
-    "_id": "6547a0c2983645b8af819915",
-    "roomId": "1",
-    "imageDescription": "Experience the epitome of luxury and comfort in our Deluxe Suite",
-    "roomSize": "500 sq. ft",
-    "roomImage": "https://i.ibb.co/GFhnC6B/1.jpg",
-    "available": true,
-    "price": 1250
-  }
+   {
+        "_id": "6547a0c2983645b8af819921",
+        "commonId": "1",
+        "Description": "Experience the epitome of luxury and comfort in our Deluxe Suite",
+        "roomSize": "500 sq. ft",
+        "Image": "https://i.ibb.co/3cbGBMt/hotel-room-luxury-resort.jpg",
+        "availables": true,
+        "prices": 1250,
+        "sitId":"Room A1 "
 
+    },
+    {
+        "_id": "6547a0c2983645b8af819922",
+        "commonId": "1",
+        "Description": "Relax in our spacious Standard Room with a beautiful view",
+        "roomSize": "400 sq. ft",
+        "Image": "https://i.ibb.co/gvNcxCj/luxury-bedroom-design.jpg",
+        "availables": true,
+        "prices": 950,
+
+        "sitId":"Room A2"
+    },
+    {
+        "_id": "6547a0c2983645b8af819923",
+        "commonId": "1",
+        "Description": "A cozy stay in our Family Suite for your loved ones",
+        "roomSize": "700 sq. ft",
+        "Image": "https://i.ibb.co/yVJwdSz/interior-bedroom-white-creamy-tones.jpg",
+        "availables": true,
+        "prices": 1600,
+        "sitId":"Room A3 "
+
+    },
+    {
+        "_id": "6547a0c2983645b8af819924",
+        "commonId": "1",
+        "Description": "Enjoy the penthouse experience in our Executive Suite",
+        "roomSize": "800 sq. ft",
+        "Image": "https://i.ibb.co/Sc24gh1/white-bedroom-hotel-1.jpg",
+        "availables": true,
+        "prices": 2200,
+        "sitId":"Room A4 "
+
+    },
+    {
+        "_id": "6547a0c2983645b8af819925",
+        "commonId": "2",
+        "Description": "Charming and affordable, our Economy Room is perfect for solo travelers",
+        "roomSize": "300 sq. ft",
+        "Image": "https://i.ibb.co/S5mxGgL/comfortable-pillow-bed-1.jpg",
+        "availables": true,
+        "prices": 750,
+
+        "sitId":"Room A5 "
+    },
+    {
+        "_id": "6547a0c2983645b8af819926",
+        "commonId": "2",
+        "Description": "Indulge in a romantic getaway in our Honeymoon Suite",
+        "roomSize": "600 sq. ft",
+        "Image": "https://i.ibb.co/MGzHBnr/comfort-pillow-bed-decoration-interior.jpg",
+        "availables": true,
+        "prices": 1750,
+        "sitId":"Room A6 "
+
+    },
+    {
+        "_id": "6547a0c2983645b8af819927",
+        "commonId": "2",
+        "Description": "Unwind in style in our Premium Room with modern amenities",
+        "roomSize": "450 sq. ft",
+        "Image": "https://i.ibb.co/Vtt3cYY/pillow-bed-1.jpg",
+        "availables": true,
+        "prices": 1050,
+        "sitId":"Room A7 "
+
+    },
+    {
+        "_id": "6547a0c2983645b8af819928",
+        "commonId": "2",
+        "Description": "Discover a cozy retreat in our Classic Room with a view",
+        "roomSize": "350 sq. ft",
+        "Image": "https://i.ibb.co/whfJYbR/white-comfortable-pillow-bed-decoration-interior.jpg",
+        "availables": true,
+        "prices": 850,
+
+        "sitId":"Room A8 "
+    },
+    {
+        "_id": "6547a0c2983645b8af819929",
+        "commonId": "3",
+        "Description": "A home away from home in our Extended Stay Suite",
+        "roomSize": "900 sq. ft",
+        "Image": "https://i.ibb.co/0YB0cyh/bed-with-blue-cushion.jpg",
+        "availables": true,
+        "prices": 2400,
+        "sitId":"Room A9 "
+
+    },
+    {
+        "_id": "6547a0c2983645b8af8199230",
+        "commonId": "3",
+        "Description": "Experience elegance and sophistication in our Presidential Suite",
+        "roomSize": "1200 sq. ft",
+        "Image": "https://i.ibb.co/2ZNNvPc/pillow-bed-2.jpg",
+        "availables": true,
+        "prices": 3200,
+        "sitId":"Room A10 "
+
+    },
+    {
+        "_id": "6547a0c2983645b8af819931",
+        "commonId": "3",
+        "Description": "Enjoy a peaceful stay in our Serenity Room with garden views",
+        "roomSize": "550 sq. ft",
+        "Image": "https://i.ibb.co/tMHC5Xm/beautiful-luxury-comfortable-white-pillow-blanket-decoration-interior-bedroom.jpg",
+        "availables": true,
+        "prices": 1350,
+        "sitId":"Room A11 "
+
+    },
+    {
+        "_id": "6547a0c2983645b8af819932",
+        "commonId": "3",
+        "Description": "Savor a boutique experience in our Loft Suite with cityscape views",
+        "roomSize": "700 sq. ft",
+        "Image": "https://i.ibb.co/sQFgbTh/tidy-hotel-room-with-brown-curtains.jpg",
+        "availables": true,
+        "prices": 1900,
+        "sitId":"Room A12 "
+
+    },
+    {
+        "_id": "6547a0c2983645b8af819933",
+        "commonId": "4",
+        "Description": "Discover the essence of opulence in our Grand Royal Suite",
+        "roomSize": "1500 sq. ft",
+        "Image": "https://i.ibb.co/CHBbXsj/pexels-pixabay-279746.jpg",
+        "availables": true,
+        "prices": 3750,
+        "sitId":"Room A13 "
+
+    },
+    {
+        "_id": "6547a0c2983645b8af819934",
+        "commonId": "4",
+        "Description": "Relish the tranquility of our Lakeside Retreat Room with a water view",
+        "roomSize": "600 sq. ft",
+        "Image": "https://i.ibb.co/sPwSY04/pexels-pixabay-271643.jpg",
+        "availables": true,
+        "prices": 1600,
+        "sitId":"Room A14 "
+
+    },
+    {
+        "_id": "6547a0c2983645b8af819935",
+        "commonId": "4",
+        "Description": "Experience urban chic in our City View Suite with skyline vistas",
+        "roomSize": "800 sq. ft",
+        "Image": "https://i.ibb.co/XxHScGN/pexels-luis-zambrano-16436968.jpg",
+        "availables": true,
+        "prices": 2100,
+        "sitId":"Room A15 "
+
+    },
+        {
+        "_id": "6547a0c2983645b8af819936",
+        "commonId": "4",
+        "Description": "Discover the essence of opulence in our Grand Royal Suite",
+        "roomSize": "1500 sq. ft",
+        "Image": "https://i.ibb.co/Jrr7j7K/pexels-curtis-adams-5071168.jpg",
+        "availables": true,
+        "prices": 3750,
+        "sitId":"Room A16 "
+
+    },
+    {
+        "_id": "6547a0c2983645b8af819937",
+        "commonId": "5",
+        "Description": "Relish the tranquility of our Lakeside Retreat Room with a water view",
+        "roomSize": "600 sq. ft",
+        "Image": "https://i.ibb.co/3dd0rhy/pexels-deno-wang-11671089.jpg",
+        "availables": true,
+        "prices": 1600,
+        "sitId":"Room A17 "
+
+    },
+    {
+        "_id": "6547a0c2983645b8af819938",
+        "commonId": "5",
+        "Description": "Experience urban chic in our City View Suite with skyline vistas",
+        "roomSize": "800 sq. ft",
+        "Image": "https://i.ibb.co/G0BL7v7/pexels-raphael-loquellano-18703869.jpg",
+        "availables": true,
+        "prices": 2100,
+        "sitId":"Room A18 "
+
+    
+      },
+       {
+        "_id": "6547a0c2983645b8af819939",
+        "commonId": "5",
+        "Description": "Relax in our cozy Classic Room with modern amenities",
+        "roomSize": "400 sq. ft",
+        "Image": "https://i.ibb.co/Q6rsL80/pexels-curtis-adams-15824908.jpg",
+        "availables": true,
+        "prices": 950,
+        "sitId": "Room B7"
+    },
+    {
+        "_id": "6547a0c2983645b8af819940",
+        "commonId": "5",
+        "Description": "Discover the essence of opulence in our Grand Royal Suite",
+        "roomSize": "1500 sq. ft",
+        "Image": "https://i.ibb.co/Zds0DSS/pexels-mateusz-dach-1150954.jpg",
+        "availables": true,
+        "prices": 3750,
+        "sitId": "Room C14"
+    },
+    {
+        "_id": "6547a0c2983645b8af819941",
+        "commonId": "6",
+        "Description": "A comfortable stay in our Economy Room for budget-conscious travelers",
+        "roomSize": "300 sq. ft",
+        "Image": "https://i.ibb.co/bLB1bVz/pexels-curtis-adams-3773575-1.jpg",
+        "availables": true,
+        "prices": 750,
+        "sitId": "Room D3"
+    },
+    {
+        "_id": "6547a0c2983645b8af819942",
+        "commonId": "6",
+        "Description": "Indulge in a romantic getaway in our Honeymoon Suite with a private balcony",
+        "roomSize": "600 sq. ft",
+        "Image": "https://i.ibb.co/3Nbf4Tv/pexels-naim-benjelloun-2029731-1.jpg",
+        "availables": true,
+        "prices": 1750,
+        "sitId": "Room E9"
+    },
+    {
+        "_id": "6547a0c2983645b8af819943",
+        "commonId": "6",
+        "Description": "Unwind in style in our Premium Room with scenic mountain views",
+        "roomSize": "450 sq. ft",
+        "Image": "https://i.ibb.co/3Nbf4Tv/pexels-naim-benjelloun-2029731-1.jpg",
+        "availables": true,
+        "prices": 1050,
+        "sitId": "Room F5"
+    },
+    {
+        "_id": "6547a0c2983645b8af819944",
+        "commonId": "6",
+        "Description": "A cozy stay in our Family Suite for your loved ones",
+        "roomSize": "700 sq. ft",
+        "Image": "https://i.ibb.co/0JGWjq1/pexels-dada-design-12277278.jpg",
+        "availables": true,
+        "prices": 1600,
+        "sitId": "Room G12"
+    }
 ]

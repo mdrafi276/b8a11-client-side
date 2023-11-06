@@ -7,7 +7,7 @@ import Riview from '../../Components/Review/Riview';
 
 const Home = () => {
     return (
-      <div className="bg-[#010313] dark:bg-[white]">
+      <div className="bg-[#010313] scroll-smooth dark:bg-[white]">
         <Navber></Navber>
           <Banner></Banner>
           <Offer></Offer>    
