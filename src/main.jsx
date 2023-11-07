@@ -39,7 +39,7 @@ const router = createBrowserRouter([
             <Rooms></Rooms>
           </PrivetRoute>
         ),
-        loader: () => fetch("http://localhost:5000/rooms")
+        loader: () => fetch("http://localhost:5000/rooms"),
       },
       {
         path: "/myBooking",
@@ -48,11 +48,18 @@ const router = createBrowserRouter([
             <MyBooking></MyBooking>
           </PrivetRoute>
         ),
+        
       },
       {
-        path:"roomSit/:id",
-        element:<Details></Details>
-      }
+        path: "room/:id",
+        element: <Details></Details>,
+        // loader: ({params}) => fetch(`http://localhost:5000/rooms/${params.id}`),
+      },
+      {
+        path: "/roomSit/:id",
+        element: <Details></Details>,
+        loader: ({params}) => fetch(`http://localhost:5000/rooms/${params.id}`),
+      },
     ],
   },
 ]);

@@ -13,14 +13,14 @@ const Riview = () => {
     return (
       <div>
         <div className="text-center md:mt-20 mt-10">
-          <h1 className="text-white text-5xl font-bold h-one">RIVIEW</h1>
+          <h1 className="text-white text-5xl font-bold h-one">
+            USER TESTIMONIALS
+          </h1>
         </div>
         <Carousel>
-         
-            {corosoulData?.map((corosul) => (
-              <CorosolMap key={corosul.id} corosul={corosul}></CorosolMap>
-            ))}
-         
+          {corosoulData?.map((corosul) => (
+            <CorosolMap key={corosul.id} corosul={corosul}></CorosolMap>
+          ))}
         </Carousel>
       </div>
     );

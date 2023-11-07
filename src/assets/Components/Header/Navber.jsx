@@ -10,7 +10,6 @@ const Navber = () => {
 
     const [mode, setMode] = useState("light");
     const handleTheme = () => {
-      console.log("things");
       const html = document.documentElement;
       if (mode == "light") {
         html.classList.remove("light");
@@ -33,7 +32,6 @@ const Navber = () => {
     }, []);
 
     const { user, logOut } = useContext(AuthContext);
-    console.log(user);
     const handleSignOut = () => {
       logOut()
         .then(() => {

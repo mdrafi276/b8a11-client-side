@@ -2,6 +2,11 @@
 const News = () => {
     return (
       <div>
+        <div className="text-center md:mt-20 mt-10">
+          <h1 className="text-white text-5xl font-bold h-one">
+             Newsletter Signup
+          </h1>
+        </div>
         <div className="container my-24 mx-auto md:px-6">
           <div className="  bg-gradient-to-r from-[#083E40]  lg:rounded-s-full dark:bg-gray-900 md:rounded-r-3xl to-[#03111E] mb-32">
             <div className="px-6 py-12 text-center md:px-12 lg:text-left">
@@ -60,7 +65,7 @@ const News = () => {
                           data-te-ripple-color="light"
                           className="mb-6 btn btn-two  inline-block w-full rounded bg-primary px-6 pt-2.5 pb-2 text-[18px] font-medium uppercase leading-normal transition duration-150 ease-in-out ,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] 0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] h-one   border-2`"
                         >
-                          Subscribe 
+                          Subscribe
                         </button>
                       </form>
                     </div>
