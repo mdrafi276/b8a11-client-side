@@ -1,16 +1,14 @@
 import {   useLoaderData, useParams, } from "react-router-dom";
 import Navber from "../../Components/Header/Navber";
 import Footer from "../../Components/Footer/Footer";
-// import RoomChildDetails from "./RoomChildDetails";
 import {  useEffect, useState } from "react";
 import axios from "axios";
 import DetailsMap from "./DetailsMap";
-// import RoomChildDetails from "./RoomChildDetails";
+import DetailsRiview from "./DetailsRiview";
 const Details = () => {
   const { price, roomImage, roomSize, imageDescription } = useLoaderData();
  
   const [detailsData, setDetailsData] = useState(null)
-  // const [childData, setChildsData] = useState([])
   
  const {id} = useParams();
   const url = `http://localhost:5000/roomSit/${id}`;
@@ -20,18 +18,7 @@ const Details = () => {
     });
  },[]);
  
-  // const urls = `http://localhost:5000/rooms/${ids}`;
-//  useEffect(()=>{
-//     axios.get(urls).then((res) => {
-//      setChildsData(res.data);
-//      console.log(childData.length);
-//     });
-//  },[])
-// axios.get(urls).then((res) => {
-//      setChildsData(res.data);
-//     //  console.log(setChildsData.length);
 
-//     });
     return (
       <div className="bg-[#010313] scroll-smooth dark:bg-white">
         <Navber></Navber>
@@ -75,6 +62,10 @@ const Details = () => {
               dataDitails={dataDitails}
             ></DetailsMap>
           ))}
+        </div>
+
+        <div>
+          <DetailsRiview></DetailsRiview>
         </div>
         <Footer></Footer>
       </div>

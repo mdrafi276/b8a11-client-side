@@ -13,7 +13,7 @@ const RoomMap = ({dataRoom}) => {
           </figure>
           <div className="card-body text-2xl font-bold  text-center">
             <p className="h-one">Price: {price}</p>
-             <button className='btn-sm btn mx-auto  bg-gray-500 border-none  hover:bg-gray-400 text-white w-[50%] '><span className='text-white'>availables</span></button>
+            {/* <button className='btn-sm btn mx-auto  bg-gray-500 border-none  hover:bg-gray-400 text-white w-[50%] '><span className='text-white'>availables</span></button> */}
          
           </div>
           <div className=" mb-10  text-center  px-2 md:px-5  ">

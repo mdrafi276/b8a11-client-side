@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
 
-const BookMap = ({item}) => {
+const BookMap = ({item, handleDelete}) => {
     
         const {
+            _id,
           prices,
           Image,
           sitId,
@@ -22,14 +24,31 @@ const BookMap = ({item}) => {
           </figure>
           <div className="md:card-body">
             <h2 className="md:card-title">{roomSize}</h2>
-            <p className=" md:text-xl pb-0 mb-0 text-sm">Price per night:-{prices}$</p>
-            <p className="  pt-0 mt-0  md:text-xl text-[14px] ">
-             {sitId}
+            <p className=" md:text-xl pb-0 mb-0 text-sm">
+              Price per night:-{prices}$
             </p>
+            <div className="flex text-center flex-col lg:flex-row gap-1 md:gap-5  mt-0 pt-0 ">
+              <h1 className="">new booking date</h1>
+              <input
+                className=" bg-gray-400 lg:h-7 md:h-5 h-4 rounded-sm text-white dark:text-white dark:bg-black text-center"
+                type="date"
+                name=""
+                id=""
+              />
+            </div>
+            <p className="  pt-0 mt-0  md:text-xl text-[14px] ">{sitId}</p>
           </div>
           <div className="flex flex-col md:mr-10 gap-3 md:gap-5 justify-center items-center">
-            <button  className=" btn-sm md:btn btn-primary"> Detelte</button>
-            <button className=" btn-sm md:btn btn-primary"> Update</button>
+            <button
+              onClick={() => handleDelete(_id)}
+              className=" btn-two btn-sm md:btn btn-primary"
+            >
+              {" "}
+              Detelte
+            </button>
+            <Link to={`/updateBooking/${_id}`}>
+              <button className=" btn-sm md:btn btn-primary"> Update</button>
+            </Link>
           </div>
         </div>
       </div>

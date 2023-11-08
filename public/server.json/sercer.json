@@ -7,7 +7,10 @@
         "Image": "https://i.ibb.co/3cbGBMt/hotel-room-luxury-resort.jpg",
         "availables": true,
         "prices": 1250,
-        "sitId":"Room A1 "
+        "sitId":"Room A1 ",
+        "date":"2023-11-07T12:47:47,075Z"
+
+        
 
     },
     {
@@ -18,8 +21,11 @@
         "Image": "https://i.ibb.co/gvNcxCj/luxury-bedroom-design.jpg",
         "availables": true,
         "prices": 950,
+        "sitId":"Room A2",
+        "date":"2023-11-07T12:47:47,075Z"
 
-        "sitId":"Room A2"
+        
+        
     },
     {
         "_id": "6547a0c2983645b8af819923",
@@ -29,8 +35,10 @@
         "Image": "https://i.ibb.co/yVJwdSz/interior-bedroom-white-creamy-tones.jpg",
         "availables": true,
         "prices": 1600,
-        "sitId":"Room A3 "
+        "sitId":"Room A3 ",
+        "date":"2023-11-07T12:47:47,075Z"
 
+        
     },
     {
         "_id": "6547a0c2983645b8af819924",
@@ -40,8 +48,10 @@
         "Image": "https://i.ibb.co/Sc24gh1/white-bedroom-hotel-1.jpg",
         "availables": true,
         "prices": 2200,
-        "sitId":"Room A4 "
+        "sitId":"Room A4 ",
+        "date":"2023-11-07T12:47:47,075Z"
 
+        
     },
     {
         "_id": "6547a0c2983645b8af819925",
@@ -51,8 +61,10 @@
         "Image": "https://i.ibb.co/S5mxGgL/comfortable-pillow-bed-1.jpg",
         "availables": true,
         "prices": 750,
+        "sitId":"Room A5 ",
+        "date":"2023-11-07T12:47:47,075Z"
 
-        "sitId":"Room A5 "
+
     },
     {
         "_id": "6547a0c2983645b8af819926",
@@ -62,8 +74,10 @@
         "Image": "https://i.ibb.co/MGzHBnr/comfort-pillow-bed-decoration-interior.jpg",
         "availables": true,
         "prices": 1750,
-        "sitId":"Room A6 "
+        "sitId":"Room A6 ",
+        "date":"2023-11-07T12:47:47,075Z"
 
+        
     },
     {
         "_id": "6547a0c2983645b8af819927",
@@ -73,8 +87,10 @@
         "Image": "https://i.ibb.co/Vtt3cYY/pillow-bed-1.jpg",
         "availables": true,
         "prices": 1050,
-        "sitId":"Room A7 "
+        "sitId":"Room A7 ",
+        "date":"2023-11-07T12:47:47,075Z"
 
+        
     },
     {
         "_id": "6547a0c2983645b8af819928",
@@ -84,8 +100,10 @@
         "Image": "https://i.ibb.co/whfJYbR/white-comfortable-pillow-bed-decoration-interior.jpg",
         "availables": true,
         "prices": 850,
+        "sitId":"Room A8 ",
+        "date":"2023-11-07T12:47:47,075Z"
 
-        "sitId":"Room A8 "
+
     },
     {
         "_id": "6547a0c2983645b8af819929",
@@ -95,8 +113,10 @@
         "Image": "https://i.ibb.co/0YB0cyh/bed-with-blue-cushion.jpg",
         "availables": true,
         "prices": 2400,
-        "sitId":"Room A9 "
+        "sitId":"Room A9 ",
+        "date":"2023-11-07T12:47:47,075Z"
 
+        
     },
     {
         "_id": "6547a0c2983645b8af8199230",
@@ -106,7 +126,9 @@
         "Image": "https://i.ibb.co/2ZNNvPc/pillow-bed-2.jpg",
         "availables": true,
         "prices": 3200,
-        "sitId":"Room A10 "
+        "sitId":"Room A10 ",
+        "date":"2023-11-07T12:47:47,075Z"
+        
 
     },
     {
@@ -117,7 +139,9 @@
         "Image": "https://i.ibb.co/tMHC5Xm/beautiful-luxury-comfortable-white-pillow-blanket-decoration-interior-bedroom.jpg",
         "availables": true,
         "prices": 1350,
-        "sitId":"Room A11 "
+        "sitId":"Room A11 ",
+        "date":"2023-11-07T12:47:47,075Z"
+        
 
     },
     {
@@ -128,7 +152,9 @@
         "Image": "https://i.ibb.co/sQFgbTh/tidy-hotel-room-with-brown-curtains.jpg",
         "availables": true,
         "prices": 1900,
-        "sitId":"Room A12 "
+        "sitId":"Room A12 ",
+        "date":"2023-11-07T12:47:47,075Z"
+        
 
     },
     {
@@ -139,7 +165,9 @@
         "Image": "https://i.ibb.co/CHBbXsj/pexels-pixabay-279746.jpg",
         "availables": true,
         "prices": 3750,
-        "sitId":"Room A13 "
+        "sitId":"Room A13 ",
+        "date":"2023-11-07T12:47:47,075Z"
+        
 
     },
     {
@@ -150,7 +178,9 @@
         "Image": "https://i.ibb.co/sPwSY04/pexels-pixabay-271643.jpg",
         "availables": true,
         "prices": 1600,
-        "sitId":"Room A14 "
+        "sitId":"Room A14 ",
+        "date":"2023-11-07T12:47:47,075Z"
+        
 
     },
     {
@@ -161,7 +191,11 @@
         "Image": "https://i.ibb.co/XxHScGN/pexels-luis-zambrano-16436968.jpg",
         "availables": true,
         "prices": 2100,
-        "sitId":"Room A15 "
+        "sitId":"Room A15 ",
+        "date":"2023-11-07T12:47:47,075Z"
+
+
+        
 
     },
         {
@@ -172,7 +206,9 @@
         "Image": "https://i.ibb.co/Jrr7j7K/pexels-curtis-adams-5071168.jpg",
         "availables": true,
         "prices": 3750,
-        "sitId":"Room A16 "
+        "sitId":"Room A16 ",
+        "date":"2023-11-07T12:47:47,075Z"
+        
 
     },
     {
@@ -183,7 +219,9 @@
         "Image": "https://i.ibb.co/3dd0rhy/pexels-deno-wang-11671089.jpg",
         "availables": true,
         "prices": 1600,
-        "sitId":"Room A17 "
+        "sitId":"Room A17 ",
+        "date":"2023-11-07T12:47:47,075Z"
+        
 
     },
     {
@@ -194,7 +232,9 @@
         "Image": "https://i.ibb.co/G0BL7v7/pexels-raphael-loquellano-18703869.jpg",
         "availables": true,
         "prices": 2100,
-        "sitId":"Room A18 "
+        "sitId":"Room A18 ",
+        "date":"2023-11-07T12:47:47,075Z"
+        
 
     
       },
@@ -206,8 +246,13 @@
         "Image": "https://i.ibb.co/Q6rsL80/pexels-curtis-adams-15824908.jpg",
         "availables": true,
         "prices": 950,
-        "sitId": "Room B7"
+        "sitId": "Room B7",
+        "date":"2023-11-07T12:47:47,075Z"
+
+
+
     },
+
     {
         "_id": "6547a0c2983645b8af819940",
         "commonId": "5",
@@ -216,7 +261,11 @@
         "Image": "https://i.ibb.co/Zds0DSS/pexels-mateusz-dach-1150954.jpg",
         "availables": true,
         "prices": 3750,
-        "sitId": "Room C14"
+        "sitId": "Room C14",
+        "date":"2023-11-07T12:47:47,075Z"
+
+
+        
     },
     {
         "_id": "6547a0c2983645b8af819941",
@@ -226,7 +275,9 @@
         "Image": "https://i.ibb.co/bLB1bVz/pexels-curtis-adams-3773575-1.jpg",
         "availables": true,
         "prices": 750,
-        "sitId": "Room D3"
+        "sitId": "Room D3",
+        "date":"2023-11-07T12:47:47,075Z"
+
     },
     {
         "_id": "6547a0c2983645b8af819942",
@@ -236,7 +287,10 @@
         "Image": "https://i.ibb.co/3Nbf4Tv/pexels-naim-benjelloun-2029731-1.jpg",
         "availables": true,
         "prices": 1750,
-        "sitId": "Room E9"
+        "sitId": "Room E9",
+        "date":"2023-11-07T12:47:47,075Z"
+
+
     },
     {
         "_id": "6547a0c2983645b8af819943",
@@ -246,7 +300,10 @@
         "Image": "https://i.ibb.co/3Nbf4Tv/pexels-naim-benjelloun-2029731-1.jpg",
         "availables": true,
         "prices": 1050,
-        "sitId": "Room F5"
+        "sitId": "Room F5",
+        "date":"2023-11-07T12:47:47,075Z"
+
+
     },
     {
         "_id": "6547a0c2983645b8af819944",
@@ -256,6 +313,9 @@
         "Image": "https://i.ibb.co/0JGWjq1/pexels-dada-design-12277278.jpg",
         "availables": true,
         "prices": 1600,
-        "sitId": "Room G12"
+        "sitId": "Room G12",
+        "date":"2023-11-07T12:47:47,075Z"
+
+        
     }
 ]

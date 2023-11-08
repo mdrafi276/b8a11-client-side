@@ -1,5 +1,5 @@
 
-const Error = () => {
+const ErrorPage = () => {
     return (
       <div>
         <div className="flex items-center justify-center h-screen">
@@ -35,4 +35,4 @@ const Error = () => {
     );
 };
 
-export default Error;
+export default ErrorPage;

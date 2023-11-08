@@ -15,10 +15,13 @@ import Rooms from './assets/Page/Rooms/Rooms';
 import MyBooking from './assets/Page/MyBooking/MyBooking';
 import PrivetRoute from './Provider/PrivetRoute';
 import Details from './assets/Page/Details/Details';
+import UpdateBooking from './assets/Page/MyBooking/UpdateBooking';
+import ErrorPage from './assets/Components/Error/Error';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Leyout></Leyout>,
+    errorElement:<ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -48,7 +51,6 @@ const router = createBrowserRouter([
             <MyBooking></MyBooking>
           </PrivetRoute>
         ),
-        
       },
       {
         path: "room/:id",
@@ -57,8 +59,22 @@ const router = createBrowserRouter([
       },
       {
         path: "/roomSit/:id",
-        element: <Details></Details>,
-        loader: ({params}) => fetch(`http://localhost:5000/rooms/${params.id}`),
+        element: (
+          <PrivetRoute>
+            <Details></Details>
+          </PrivetRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/rooms/${params.id}`),
+      },
+      {
+        path: "/updateBooking/:id",
+        element: (
+          <PrivetRoute>
+            <UpdateBooking></UpdateBooking>
+          </PrivetRoute>
+        ),
+        loader:({params}) => fetch(`http://localhost:5000/myBooking/${params.id}`)
       },
     ],
   },

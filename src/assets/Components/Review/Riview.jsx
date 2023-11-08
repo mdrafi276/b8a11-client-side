@@ -6,9 +6,9 @@ const Riview = () => {
 
   const [corosoulData, setCorousolData] = useState();
   useEffect(()=>{
-    fetch('/user.json')
-    .then(res => res.json())
-    .then(data => setCorousolData(data))
+    fetch("http://localhost:5000/riview")
+      .then((res) => res.json())
+      .then((data) => setCorousolData(data));
   },[])
     return (
       <div>
