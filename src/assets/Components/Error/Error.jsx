@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const ErrorPage = () => {
     return (
@@ -14,9 +15,11 @@ const ErrorPage = () => {
                   <ion-icon name="arrow-back-sharp"></ion-icon>
                 </div>
               </a>
-              <div className="text-sm font-medium text-stone-500">
-                Back to Home Page
-              </div>
+              <Link>
+                <div className="text-sm font-medium text-stone-500">
+                  Back to Home Page
+                </div>
+              </Link>
             </div>
           </div>
         </div>

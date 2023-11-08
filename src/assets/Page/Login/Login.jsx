@@ -1,11 +1,9 @@
-
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { FaGoogle, FaRegEnvelope, FaUnlock } from "react-icons/fa";
 import { AuthContext } from "../../../Provider/AuthProvider";
-import './Login.css'
+import "./Login.css";
 import { useContext } from "react";
-import axios from "axios";
 
 const Login = () => {
   const { signIn, googleLogin } = useContext(AuthContext);
@@ -20,7 +18,6 @@ const Login = () => {
     const password = form.password.value;
     console.log(email, password);
 
-    
     signIn(email, password)
       .then(() => {
         Swal.fire({
@@ -30,23 +27,22 @@ const Login = () => {
           footer: '<a href="">Why do I have this issue?</a>',
         });
 
-
         navigate(location?.state ? location.state : "/");
       })
-//  Swal.fire("Login success........");
+      //  Swal.fire("Login success........");
       // .then(result => {
       //   const loggedInUser = result.user;
       //   console.log(loggedInUser);
-       
+
       //   const user = {email};
-      //   axios.post("http://localhost:5000/jwt", user ,{withCredentials:true})
+      //   axios.post("https://hotel-server-theta.vercel.app/jwt", user ,{withCredentials:true})
       //   .then(res =>{
       //     console.log(res.data);
       //     if(res.data.success){
       //       navigate(location?.state ? location?.state : '/')
       //     }
       //   })
-        
+
       // })
       .catch((error) => {
         Swal.fire({
@@ -112,7 +108,6 @@ const Login = () => {
                 Login
               </button>
               <div className="register-link">
-              
                 <p className="">
                   <button
                     onClick={hangleGoogleLogin}
@@ -128,7 +123,7 @@ const Login = () => {
                         to="/register"
                         className="hover:text-blue-600 underline"
                       >
-                       Register
+                        Register
                       </Link>
                     </p>
                   </div>

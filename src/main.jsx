@@ -1,27 +1,23 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import {
-  createBrowserRouter,
- 
-  RouterProvider,
-} from "react-router-dom";
-import { AuthProvider } from './Provider/AuthProvider';
-import Login from './assets/Page/Login/Login';
-import Register from './assets/Page/Register/Register';
-import Home from './assets/Page/Home/Home';
-import Leyout from './Leyout/Leyout';
-import Rooms from './assets/Page/Rooms/Rooms';
-import MyBooking from './assets/Page/MyBooking/MyBooking';
-import PrivetRoute from './Provider/PrivetRoute';
-import Details from './assets/Page/Details/Details';
-import UpdateBooking from './assets/Page/MyBooking/UpdateBooking';
-import ErrorPage from './assets/Components/Error/Error';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { AuthProvider } from "./Provider/AuthProvider";
+import Login from "./assets/Page/Login/Login";
+import Register from "./assets/Page/Register/Register";
+import Home from "./assets/Page/Home/Home";
+import Leyout from "./Leyout/Leyout";
+import Rooms from "./assets/Page/Rooms/Rooms";
+import MyBooking from "./assets/Page/MyBooking/MyBooking";
+import PrivetRoute from "./Provider/PrivetRoute";
+import Details from "./assets/Page/Details/Details";
+import UpdateBooking from "./assets/Page/MyBooking/UpdateBooking";
+import ErrorPage from "./assets/Components/Error/Error";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Leyout></Leyout>,
-    errorElement:<ErrorPage></ErrorPage>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -42,7 +38,7 @@ const router = createBrowserRouter([
             <Rooms></Rooms>
           </PrivetRoute>
         ),
-        loader: () => fetch("http://localhost:5000/rooms"),
+        loader: () => fetch("https://hotel-server-theta.vercel.app/rooms"),
       },
       {
         path: "/myBooking",
@@ -55,7 +51,7 @@ const router = createBrowserRouter([
       {
         path: "room/:id",
         element: <Details></Details>,
-        // loader: ({params}) => fetch(`http://localhost:5000/rooms/${params.id}`),
+        // loader: ({params}) => fetch(`https://hotel-server-theta.vercel.app/rooms/${params.id}`),
       },
       {
         path: "/roomSit/:id",
@@ -65,7 +61,7 @@ const router = createBrowserRouter([
           </PrivetRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/rooms/${params.id}`),
+          fetch(`https://hotel-server-theta.vercel.app/rooms/${params.id}`),
       },
       {
         path: "/updateBooking/:id",
@@ -74,7 +70,8 @@ const router = createBrowserRouter([
             <UpdateBooking></UpdateBooking>
           </PrivetRoute>
         ),
-        loader:({params}) => fetch(`http://localhost:5000/myBooking/${params.id}`)
+        loader: ({ params }) =>
+          fetch(`https://hotel-server-theta.vercel.app/update/${params.id}`),
       },
     ],
   },
