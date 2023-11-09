@@ -20,7 +20,7 @@ const UpdateBooking = () => {
       sitId,
     };
 
-    fetch(`https://hotel-server-theta.vercel.app/update/${updateData._id}`, {
+    fetch(`http://localhost:5000/update/${updateData._id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

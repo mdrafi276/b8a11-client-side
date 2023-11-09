@@ -41,7 +41,7 @@ const AuthProvider = ({ children }) => {
 
       if (currentUser) {
         axios
-          .post("https://hotel-server-theta.vercel.app/jwt", logInUser, {
+          .post("http://localhost:5000/jwt", logInUser, {
             withCredentials: true,
           })
           .then((res) => console.log(res))
