@@ -38,7 +38,7 @@ const router = createBrowserRouter([
             <Rooms></Rooms>
           </PrivetRoute>
         ),
-        loader: () => fetch("http://localhost:5000/rooms"),
+        // loader: () => fetch("http://localhost:5000/rooms"),
       },
       {
         path: "/myBooking",
