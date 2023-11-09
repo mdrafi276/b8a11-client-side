@@ -43,9 +43,9 @@ const MyBooking = () => {
   const userEmail = user.email;
   const [bookData, setBookData] = useState(null);
   useEffect(() => {
-    fetch(`https://hotel-server-theta.vercel.app/myBooking/${userEmail}`, {
-      credentials: "include",
-    })
+    fetch(
+      `https://hotel-server-theta.vercel.app/myBooking/${userEmail}`
+    )
       .then((res) => res.json())
       .then((data) => setBookData(data));
   }, [userEmail]);

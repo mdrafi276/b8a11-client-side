@@ -1,12 +1,21 @@
-import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth';
-import  { createContext, useEffect, useState } from 'react';
-import app from "../.Firebase/firebase.config"
-const AuthContext = createContext(null)
-const auth = getAuth(app)
-const AuthProvider = ({children}) => {
-     const [user, setUser] = useState(null);
+import {
+  GoogleAuthProvider,
+  createUserWithEmailAndPassword,
+  getAuth,
+  onAuthStateChanged,
+  signInWithEmailAndPassword,
+  signInWithPopup,
+  signOut,
+} from "firebase/auth";
+import { createContext, useEffect, useState } from "react";
+import app from "../.Firebase/firebase.config";
+import axios from "axios";
+const AuthContext = createContext(null);
+const auth = getAuth(app);
+const AuthProvider = ({ children }) => {
+  const [user, setUser] = useState(null);
   const [loding, setLoding] = useState(true);
-const googleProvider = new GoogleAuthProvider();
+  const googleProvider = new GoogleAuthProvider();
   const createUser = (email, password) => {
     setLoding(true);
     return createUserWithEmailAndPassword(auth, email, password);
@@ -27,6 +36,19 @@ const googleProvider = new GoogleAuthProvider();
       setUser(currentUser);
       console.log("use in the auth state  change", currentUser);
       setLoding(false);
+      const userEmail = createContext?.email || user?.email;
+      const logInUser = { email: userEmail };
+
+      if (currentUser) {
+        axios
+          .post("https://hotel-server-theta.vercel.app/jwt", logInUser, {
+            withCredentials: true,
+          })
+          .then((res) => console.log(res))
+          .catch((error) => {
+            console.log(error);
+          });
+      }
     });
     return () => unSubscribe();
   }, []);
@@ -38,11 +60,9 @@ const googleProvider = new GoogleAuthProvider();
     signIn,
     googleLogin,
   };
-    return (
-        <AuthContext.Provider value={AuthInfo}>
-            {children}
-        </AuthContext.Provider>
-    );
+  return (
+    <AuthContext.Provider value={AuthInfo}>{children}</AuthContext.Provider>
+  );
 };
 
 export { AuthProvider, AuthContext };
