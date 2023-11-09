@@ -36,7 +36,7 @@ const AuthProvider = ({ children }) => {
       setUser(currentUser);
       console.log("use in the auth state  change", currentUser);
       setLoding(false);
-      const userEmail = createContext?.email || user?.email;
+      const userEmail = currentUser?.email || user?.email;
       const logInUser = { email: userEmail };
 
       if (currentUser) {
@@ -44,7 +44,7 @@ const AuthProvider = ({ children }) => {
           .post("http://localhost:5000/jwt", logInUser, {
             withCredentials: true,
           })
-          .then((res) => console.log(res))
+          .then((res) => console.log(res.data))
           .catch((error) => {
             console.log(error);
           });
@@ -77,4 +77,3 @@ const AuthProvider = ({ children }) => {
 };
 
 export { AuthProvider, AuthContext };
-// hello
