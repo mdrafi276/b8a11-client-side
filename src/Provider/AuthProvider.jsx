@@ -48,6 +48,15 @@ const AuthProvider = ({ children }) => {
           .catch((error) => {
             console.log(error);
           });
+      }else{
+        axios.post("http://localhost:5000/jwtLogout", logInUser,{withCredentials:true,})
+        .then(res =>{
+          console.log(res);
+          
+        })
+        .catch(error =>{
+          console.error(error);
+        })
       }
     });
     return () => unSubscribe();
