@@ -11,7 +11,7 @@ const Details = () => {
   const [detailsData, setDetailsData] = useState(null);
 
   const { id } = useParams();
-  const url = `http://localhost:5000/roomSit/${id}`;
+  const url = `https://hotel-server-theta.vercel.app/roomSit/${id}`;
   useEffect(() => {
     axios.get(url).then((res) => {
       setDetailsData(res.data);

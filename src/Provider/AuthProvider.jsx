@@ -42,16 +42,16 @@ const AuthProvider = ({ children }) => {
 
       if (currentUser) {
         axios
-          .post("http://localhost:5000/jwt", logInUser, {
+          .post("https://hotel-server-theta.vercel.app/jwt", logInUser, {
             withCredentials: true,
           })
           .then((res) => console.log(res.data))
           .catch((error) => {
             console.log(error);
           });
-      }else{
+      } else {
         axios
-          .post("http://localhost:5000/jwtLogout", logInUser, {
+          .post("https://hotel-server-theta.vercel.app/logout", logInUser, {
             withCredentials: true,
           })
           .then((res) => {

@@ -18,7 +18,7 @@ const DetailsMap = ({ dataDitails }) => {
     userEmail,
   };
   const handleDetails = () => {
-    fetch("http://localhost:5000/myBooking", {
+    fetch("https://hotel-server-theta.vercel.app/myBooking", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -38,7 +38,7 @@ const router = createBrowserRouter([
             <Rooms></Rooms>
           </PrivetRoute>
         ),
-        // loader: () => fetch("http://localhost:5000/rooms"),
+        // loader: () => fetch("https://hotel-server-theta.vercel.app/rooms"),
       },
       {
         path: "/myBooking",
@@ -51,7 +51,7 @@ const router = createBrowserRouter([
       {
         path: "room/:id",
         element: <Details></Details>,
-        //  loader: ({parms}) => fetch(`http://localhost:5000/rooms/${params.id}`),
+        //  loader: ({parms}) => fetch(`https://hotel-server-theta.vercel.app/rooms/${params.id}`),
       },
       {
         path: "/roomSit/:id",
@@ -61,7 +61,7 @@ const router = createBrowserRouter([
           </PrivetRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/rooms/${params.id}`),
+          fetch(`https://hotel-server-theta.vercel.app/rooms/${params.id}`),
       },
       {
         path: "/updateBooking/:id",
@@ -71,7 +71,7 @@ const router = createBrowserRouter([
           </PrivetRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/update/${params.id}`),
+          fetch(`https://hotel-server-theta.vercel.app/update/${params.id}`),
       },
     ],
   },

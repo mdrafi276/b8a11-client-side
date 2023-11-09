@@ -5,7 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const Riview = () => {
   const [corosoulData, setCorousolData] = useState();
   useEffect(() => {
-    fetch("http://localhost:5000/riview")
+    fetch("https://hotel-server-theta.vercel.app/riview")
       .then((res) => res.json())
       .then((data) => setCorousolData(data));
   }, []);

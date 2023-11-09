@@ -17,7 +17,7 @@ const MyBooking = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/myBooking/${_id}`, {
+        fetch(`https://hotel-server-theta.vercel.app/myBooking/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -43,7 +43,7 @@ const MyBooking = () => {
   const userEmail = user.email;
   const [bookData, setBookData] = useState(null);
   useEffect(() => {
-    fetch(`http://localhost:5000/myBooking/${userEmail}`)
+    fetch(`https://hotel-server-theta.vercel.app/myBooking/${userEmail}`)
       .then((res) => res.json())
       .then((data) => setBookData(data));
   }, [userEmail]);
