@@ -5,7 +5,7 @@ Welcome to the **HotelHub ** website! This platform is designed to streamline th
 ## Website Name
 
 ** Hotel hub **
-## You can also visit my website [here](https://hotel-server-ju80c6pci-mdrafi276.vercel.app)
+## You can also visit my website [here]([https://hotel-server-ju80c6pci-mdrafi276.vercel.app](https://hotel-projects-be67f.web.app/))
 
 ### User-Friendly Homepage:
 
