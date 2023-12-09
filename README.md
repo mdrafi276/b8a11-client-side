@@ -1,4 +1,4 @@
-# Tecnical and electronic 
+# Hotle management website
 
 Welcome to the **HotelHub ** website! This platform is designed to streamline the management and hotel  and resorses  website. Below, you'll find information about the website, how to access it, and some key features.
 
